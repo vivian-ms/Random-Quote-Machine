@@ -2,6 +2,8 @@ var quotes = [];
 
 $(function() {
   getQuotes();
+
+  $('#new-quote').on('click', getRandomQuote);
 });
 
 function getQuotes() {
