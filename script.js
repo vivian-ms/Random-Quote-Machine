@@ -23,4 +23,7 @@ function getRandomQuote() {
 function displayQuote(quote) {
   $('#text').text(`"${quote.text}"`);
   $('#author').text(quote.author);
+
+  let url = encodeURIComponent(`"${quote.text}" ${quote.author}`);
+  $('#tweet-quote').attr('href', `https://twitter.com/intent/tweet?text=${url}`);
 }
