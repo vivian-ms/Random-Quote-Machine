@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh; }
+
+h1 {
+  left: 0px;
+  right: 0px;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 4rem;
+  font-weight: bold; }
+
+#quote-box {
+  -ms-flex-preferred-size: 600px;
+  flex-basis: 600px;
+  border-radius: 10px; }
+
+.blockquote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400; }
+
+.blockquote-footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-variant: small-caps; }
+
+#tweet-quote {
+  color: white;
+  background: #1da1f2;
+  padding: 10px 20px; }
+
+#new-quote, #tweet-quote span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200; }
+
+.fa-quote-left {
+  position: relative;
+  top: -20px; }
+
+.fa-quote-right {
+  position: relative;
+  bottom: -15px; }
