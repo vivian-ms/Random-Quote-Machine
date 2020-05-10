@@ -3,21 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Random Quote Machine</title>
   </head>
   <body>
-    <h1>Random Quote Machine</h1>
-    <div class="container">
-      <div id="quote-box">
-        <p id="text"></p>
-        <p id="author"></p>
-        <button id="new-quote">New Quote</button>
-        <a href="#" id="tweet-quote" target="_blank">Share</a>
-      </div>
-    </div>
+    <h1 class="text-center position-absolute mx-auto py-3">Random Quote Machine</h1>
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
+      <div id="quote-box" class="p-5">
+        <p id="text" class="position-relative d-inline-block blockquote p-3"></p>
+        <footer id="author" class="blockquote-footer p-3"></footer>
+        <div id="buttons-div" class="d-flex justify-content-around align-items-stretch flex-wrap mt-3">
+          <button id="new-quote" class="btn btn-primary mb-1">New Quote</button>
+          <a id="tweet-quote" class="btn fa fa-twitter mb-1" target="_blank">&nbsp; <span>Share</span></a>
+        </div>  <!-- End #buttons-div -->
+      </div>  <!--  End #quote-box-->
+    </div>  <!-- End .d-flex -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
