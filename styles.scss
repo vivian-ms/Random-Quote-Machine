@@ -12,6 +12,8 @@ img {
 h1 {
   left: 0px;
   right: 0px;
+  color: blue;
+  text-shadow: 2px 2px 5px darkblue;
   font: {
     family: 'Londrina Outline', cursive;
     size: 4rem;
@@ -22,9 +24,11 @@ h1 {
 #quote-box {
   flex-basis: 600px;
   border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
 }
 
 .blockquote {
+  color: blue;
   font: {
     family: 'Montserrat', sans-serif;
     size: 1.6rem;
@@ -33,6 +37,7 @@ h1 {
 }
 
 .blockquote-footer {
+  color: blue;
   font: {
     family: 'Montserrat', sans-serif;
     size: 1.1rem;
