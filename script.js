@@ -3,8 +3,22 @@ var quotes = [];
 $(function() {
   getQuotes();
 
+  $(window).on('resize', adjustStyle);
+
   $('#new-quote').on('click', getRandomQuote);
 });
+
+
+function adjustStyle() {
+  let title_height = $('h1').outerHeight();
+  let quote_height = $('#quote-box').outerHeight(true);
+
+  // Vertically center quote box
+  $('.container').css('min-height', `${title_height * 2 + quote_height}px`);
+
+  // Set height of background image to height of page
+  $('img').css('height', $('.container').outerHeight(true));
+}
 
 
 function getQuotes() {
@@ -39,4 +53,6 @@ function displayQuote(quote) {
 
   let url = encodeURIComponent(`"${quote.text}" ${quote.author}`);
   $('#tweet-quote').attr('href', `https://twitter.com/intent/tweet?text=${url}`);
+
+  adjustStyle();
 }
